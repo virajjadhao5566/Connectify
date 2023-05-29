@@ -5,6 +5,12 @@ import left_bg_landing_header from '../../assets/left_bg_landing_header.svg'
 import right_bg_landing_header from '../../assets/right_bg_landing_header.svg'
 import cloudeImg from '../../assets/center_bg_landing_header.svg'
 
+import Section2 from "./components/section2";
+import Section3 from "./components/section3";
+import Section4 from "./components/section4";
+import Section5 from "./components/section5";
+import Footer from "./components/footer";
+
 import { Link } from "react-router-dom";
 const Landing = () => {
     return (
@@ -53,6 +59,11 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            <Section2 />
+            <Section3 />
+            <Section4 />
+            <Section5 />
+            <Footer />
         </>
     )
 }
