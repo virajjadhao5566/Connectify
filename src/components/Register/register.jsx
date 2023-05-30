@@ -1,16 +1,20 @@
 import React from "react";
 import bg_img from "../../assets/login_bg.svg"
-import discordLogo from  '../../assets/discord_main_logo.svg'
-
+import discordLogo from '../../assets/discord_main_logo.svg'
+import { Link } from "react-router-dom";
+const loadDashboard = () =>{
+    import('../Landing/landing')
+}
 const Register = () => {
     return (
         <div
             className="relative z-0 bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${bg_img})` }}
         >
-           
-                <img src={discordLogo} alt="discord" className="p-5" />
-           
+
+            <Link to="/" onMouseEnter={loadDashboard}>
+                <img src={discordLogo} alt="discord" />
+            </Link>
             <div className="bg-[#353535] text-white w-2/6 flex flex-col mx-auto">
                 <p className="text-center p-2 text-2xl font-extrabold text-white">
                     Create an account

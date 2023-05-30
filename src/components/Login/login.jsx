@@ -2,13 +2,19 @@ import React from "react";
 import qr from '../../assets/qr_code.png'
 import discordLogo from '../../assets/discord_main_logo.svg'
 import login_bg from '../../assets/login_bg.svg'
+import { Link } from "react-router-dom";
+const loadDashboard = () =>{
+    import('../Landing/landing')
+}
 const Login = () => {
     return (
         <div
             className="relative z-0 bg-cover bg-center h-screen"
             style={{ backgroundImage: `url(${login_bg})` }}
         >
-            <img src={discordLogo} alt="discord" className="p-5" />
+            <Link to="/" onMouseEnter={loadDashboard}>
+                <img src={discordLogo} alt="discord" />
+            </Link>
             <div className="flex flex-row w-1/2 m-auto bg-[#353535] text-white">
                 <div className="flex flex-col mx-auto  p-5">
                     <p className="p-2 text-2xl font-extrabold text-white">
