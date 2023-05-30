@@ -13,7 +13,7 @@ const Register = () => {
         >
 
             <Link to="/" onMouseEnter={loadDashboard}>
-                <img src={discordLogo} alt="discord" />
+                <img className="p-5" src={discordLogo} alt="discord" />
             </Link>
             <div className="bg-[#353535] text-white w-2/6 flex flex-col mx-auto">
                 <p className="text-center p-2 text-2xl font-extrabold text-white">

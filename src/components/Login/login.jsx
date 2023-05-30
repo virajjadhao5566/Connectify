@@ -13,7 +13,7 @@ const Login = () => {
             style={{ backgroundImage: `url(${login_bg})` }}
         >
             <Link to="/" onMouseEnter={loadDashboard}>
-                <img src={discordLogo} alt="discord" />
+                <img className="p-5" src={discordLogo} alt="discord" />
             </Link>
             <div className="flex flex-row w-1/2 m-auto bg-[#353535] text-white">
                 <div className="flex flex-col mx-auto  p-5">
